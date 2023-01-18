@@ -1,0 +1,509 @@
+@import "colores";
+@import "variables";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+    font-family:Poppins;
+    overflow-x: hidden;
+}
+
+:root {
+    --Dark-Blue: hsl(213, 19%, 18%);
+    --Light-Grey: hsl(217, 12%, 63%);
+  }
+
+a {
+    cursor: pointer;
+}
+
+.main-cart {
+    background-color: #ffff;
+}
+
+main {
+   background-color: var(--Dark-Blue);
+   
+}
+
+body {
+    min-width: 630px;
+    margin: 0px;
+
+}
+
+nav{
+    div{
+        a{
+        font: size 40px;
+        }
+    }
+}
+
+.navbar-nav a:hover{
+    transform: scale(1.1);
+}
+
+#h3Manga {
+    padding-top: 15px;
+    border-bottom: 1px solid black;
+}
+
+
+.modal-contenedor {
+    display: flex;
+    align-items: center;
+
+    div{
+        .imagen-carrito{
+            width: 200px;
+            padding: 20px;
+            gap: 2rem;
+        }
+    }
+
+    
+}
+
+.modal-content {
+    background-color: gold;
+}
+
+
+
+.header {
+    background-color: #1b3039;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 85px;
+    padding: 5px 10%;
+
+        .logo{
+            cursor: pointer;
+            margin-right: auto;
+            img {
+                height: 70px;
+                width: auto;
+                transition: all 0.3s;
+                    &:hover{
+                        transform: scale(1.2);
+                    }
+            }
+    }
+}
+
+.img-wsp {
+    position: fixed;
+    right: 20px;
+    bottom: 15px;
+    z-index: 50;
+    width: 50px;
+    border-radius: 50px;
+    border: 2px #0df053 solid;
+    transition: all 0.3;
+        &:hover{
+                text-decoration: none;
+                transform: scale(1.1);
+                transition: 0.3s;
+        }
+}
+
+button {
+    font-size: 16px;
+    border-radius: 8px;
+    padding: 10x 20px;
+    text-align: center;
+    }
+
+.boton-h1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color:#ffc324;
+    h1{
+        font-size: 32px;
+    }
+}
+
+    .title-div{
+        background-color: #ffbc0e;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        font-weight: bold;
+        text-align: center;
+        
+        .title{
+            display: inline;
+            text-align: center;
+        }
+         .button-add {
+            margin-right: 30px;
+            float: right;
+            transition-duration: 0.4s;
+            background-color: #e4901b;
+            color: black;
+            padding: 15px ;
+            border-radius: 50%;
+            &:hover{
+                background-color: #f59436;
+                color: white;
+                border: none;
+            }
+          } 
+    }
+
+
+.page-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-top: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+
+    .flex-btn-precio {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+        align-items: center;
+        text-align: center;
+        
+    }
+
+    .button-add {
+        transition-duration: 0.4s;
+        background-color: #ffa726;
+        color: white;
+        border: 2px transparent;
+        padding: 10px 20px;
+        border-radius: 10px;
+        &:hover{
+            background-color: white;
+            color: #FFA726;
+            border: 1px solid #EF6C00;
+        }
+      }
+    }
+
+     .merch-container {
+        padding: 20px 15px;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
+        flex-basis: calc(20% - 40px);
+
+        &:hover{
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        }
+
+            h1{
+                margin-bottom: 10px;
+                margin-left: 15px;
+            }
+
+            img, button{
+                cursor: pointer;
+            }
+    } 
+
+    .img-anime {
+        height: 450px;
+
+        img {
+            height: 100%;
+            width: 100%;
+            min-width: 250px;
+        }
+    }
+
+
+.main-nos{
+    padding-left: 20%;
+    padding-top: 20px;
+    padding-right: 20%;
+    padding-bottom: 40px;
+        
+        
+}
+
+.titl-nos{
+    h3{
+        text-transform: uppercase;
+        border-bottom: 1px solid #0a131d;
+        font-size: 32px;
+        padding-bottom: 10px;
+    
+    }
+} 
+
+
+.div-nos{
+    background-color: $amarillo_principal;
+    padding-left: 10px;
+    h4{
+        line-height: 80px;
+        margin-left: 100px;
+        text-transform: uppercase;
+        font-size: 24px;
+    }
+    p{
+        padding-right: 45%;
+        line-height: 30px;
+        margin-left: 100px;
+        margin-bottom: 30px;
+        font-weight: bold;
+        font-size: 20px;
+        padding-bottom: 30px;
+        
+    }
+    img{
+        width: 90px;
+        float: left;
+        margin-top: 20px;
+        vertical-align: middle;
+        border:6px double $naranja_oscuro ;
+        border-radius: 20px;
+    }
+    
+}
+
+.main-prev{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    h3{
+        padding-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        font-size: 48px;
+        width: 50%;
+        font-weight: bold;
+        padding-bottom: 50px;
+    }
+    p{
+        background-color: orange;
+        margin-left: auto;
+        margin-right: auto;
+        width: auto;
+        padding: 20px;
+        font-weight: bold;
+        font-size: 24px;
+        a{
+            text-decoration: none;
+            color:#1b3039;
+            font-size: 24px;
+        }
+    }
+}
+
+
+ .merch-pr {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-right: 90px;
+    padding-left: 90px;
+    background: #ffbc0e;
+    display: inline-block;
+    margin-top: 25px;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 50%;
+    border: 1px solid #1b3039;
+}
+
+
+
+.row-merch {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 25px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 60px; 
+    margin-right: 60px; 
+    .button-add {
+        transition-duration: 0.4s;
+        background-color: #e4901b;
+        color: black;
+        border: 2px solid #f59436;
+        padding: 15px ;
+        &:hover{
+            background-color: #f59436;
+            color: white;
+            border: none;
+        }
+      }
+}
+
+.merch-container {
+    margin: 15px 0;
+    padding: 10px 15px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
+    background-color: #EEEEEE;
+    flex-basis: calc(20% - 40px);
+    border-radius: 10px;
+    &:hover{
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    }
+    h1{
+        margin-bottom: 10px;
+        margin-left: 15px;
+    }
+}
+
+.img-anime {
+    height: 350px;
+    img{
+        height: 100%;
+        width: 100%;
+        min-width: 250px;
+        cursor: pointer;
+        background-color: #e4901b;
+    }
+} 
+
+
+
+div .red-social a {
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #efefef;
+    margin-right: 10px;
+    text-align: center;
+    transition: all 300ms ease;
+    align-items: center;
+    &:hover{
+        color: #ffc324;
+    }
+}
+
+.main-ofertas {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.index-footer {
+    padding-top: 20px;
+}
+
+.footer-cart {
+    position:absolute;
+    bottom: 0%;
+    width: 100%;
+    overflow-y: hidden;
+}
+
+#activarFuncion {
+    opacity: 0;
+    cursor: default;
+}
+
+.spinner {
+    margin: 100px auto;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    text-align: center;
+    
+    -webkit-animation: sk-rotate 2.0s infinite linear;
+    animation: sk-rotate 2.0s infinite linear;
+  }
+  
+  .dot1, .dot2 {
+    width: 60%;
+    height: 60%;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    background-color: #333;
+    border-radius: 100%;
+    
+    -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+    animation: sk-bounce 2.0s infinite ease-in-out;
+  }
+  
+  .dot2 {
+    top: auto;
+    bottom: 0;
+    -webkit-animation-delay: -1.0s;
+    animation-delay: -1.0s;
+  }
+
+  @-webkit-keyframes sk-rotate { 100% { -webkit-transform: rotate(360deg) }}
+  @keyframes sk-rotate { 100% { transform: rotate(360deg); -webkit-transform: rotate(360deg) }}
+  
+  @-webkit-keyframes sk-bounce {
+    0%, 100% { -webkit-transform: scale(0.0) }
+    50% { -webkit-transform: scale(1.0) }
+  }
+  
+  @keyframes sk-bounce {
+    0%, 100% { 
+      transform: scale(0.0);
+      -webkit-transform: scale(0.0);
+    } 50% { 
+      transform: scale(1.0);
+      -webkit-transform: scale(1.0);
+    }
+  }
+
+
+@media screen and (max-width:990px) {
+    #txtBuscar {
+     padding-left: 100%;
+     margin-top: 15px;
+    }
+   
+   }
+   
+   @media screen and (max-width:990px) {
+       #btnBuscar {
+        margin-top: 15px;
+       }
+      
+      }
+   
+   @media screen and (max-width:990px) {
+       #tunelNav {
+        width: 150px;
+       }
+      
+      }
+
+@media screen and (max-width:800px) {
+    .merch-container .box {
+    width: 100%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 53px;
+    padding: 35px 10px;
+    }
+
+    .div-nos{
+        p, h4{
+            padding-right:30px;
+        }
+        h4{
+            line-height: 50px;
+            
+        }
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+
+
