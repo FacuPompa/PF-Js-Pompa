@@ -137,13 +137,12 @@ button {
             text-align: center;
         }
          .button-add {
-            margin-right: 30px;
-            float: right;
             transition-duration: 0.4s;
-            background-color: #e4901b;
-            color: black;
-            padding: 15px ;
-            border-radius: 50%;
+            background-color: #ffa726;
+            color: white;
+            border: 2px transparent;
+            padding: 10px 20px;
+            border-radius: 10px;
             &:hover{
                 background-color: #f59436;
                 color: white;
@@ -227,17 +226,19 @@ button {
 .titl-nos{
     h3{
         text-transform: uppercase;
-        border-bottom: 1px solid #0a131d;
+        border-bottom: 3px solid #0a131d;
         font-size: 32px;
         padding-bottom: 10px;
-    
+        color: #EEEEEE;
     }
 } 
 
 
 .div-nos{
-    background-color: $amarillo_principal;
+    background-color:#EEEEEE;
     padding-left: 10px;
+    border-radius: 10px;
+    margin: 15px;
     h4{
         line-height: 80px;
         margin-left: 100px;
@@ -304,12 +305,12 @@ button {
     padding-bottom: 50px;
     padding-right: 90px;
     padding-left: 90px;
-    background: #ffbc0e;
+    background: #EEEEEE;
     display: inline-block;
     margin-top: 25px;
     margin-left: 50px;
     margin-right: 50px;
-    border-radius: 50%;
+    border-radius: 10px;
     border: 1px solid #1b3039;
 }
 
@@ -327,14 +328,15 @@ button {
     margin-right: 60px; 
     .button-add {
         transition-duration: 0.4s;
-        background-color: #e4901b;
-        color: black;
-        border: 2px solid #f59436;
-        padding: 15px ;
+        background-color: #ffa726;
+        color: white;
+        border: 2px transparent;
+        padding: 10px 20px;
+        border-radius: 10px;
         &:hover{
-            background-color: #f59436;
-            color: white;
-            border: none;
+            background-color: white;
+            color: #FFA726;
+            border: 1px solid #EF6C00;
         }
       }
 }
@@ -362,7 +364,7 @@ button {
         width: 100%;
         min-width: 250px;
         cursor: pointer;
-        background-color: #e4901b;
+        background-color: #EEEEEE;
     }
 } 
 
