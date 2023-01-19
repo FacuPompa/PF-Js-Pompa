@@ -54,17 +54,14 @@ nav{
 .modal-contenedor {
     display: flex;
     align-items: center;
-
-    div{
-        .imagen-carrito{
-            width: 200px;
-            padding: 20px;
-            gap: 2rem;
-        }
     }
 
     
-}
+    .imagen-carrito{
+        width: 200px;
+        padding: 20px;
+        gap: 2rem;
+    }
 
 .modal-content {
     background-color: gold;
@@ -397,10 +394,15 @@ div .red-social a {
 }
 
 .footer-cart {
-    position:absolute;
     bottom: 0%;
     width: 100%;
     overflow-y: hidden;
+    padding-top: 70px;
+}
+
+.compra-boddy {
+    position: relative;
+    padding-bottom: 70px;
 }
 
 #activarFuncion {
@@ -438,6 +440,26 @@ div .red-social a {
     -webkit-animation-delay: -1.0s;
     animation-delay: -1.0s;
   }
+
+  input {
+    padding: 1rem;
+    border-radius: 10px;
+    border: none;
+    background-color: #fff;
+    font-family: inherit;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    min-width: 300px;
+    font-size: 1rem; }
+    inputfocus {
+      outline: none; }
+  
+  .weather {
+    text-align: center;
+    font-size: 2rem; }
+    .weather h2 {
+      margin-bottom: 0;
+      display: flex;
+      align-items: center; }
 
   @-webkit-keyframes sk-rotate { 100% { -webkit-transform: rotate(360deg) }}
   @keyframes sk-rotate { 100% { transform: rotate(360deg); -webkit-transform: rotate(360deg) }}
